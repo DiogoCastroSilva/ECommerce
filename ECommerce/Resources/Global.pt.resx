@@ -204,4 +204,16 @@
   <data name="Colour" xml:space="preserve">
     <value>Cor</value>
   </data>
+  <data name="HISTORY" xml:space="preserve">
+    <value>HISTORIA</value>
+  </data>
+  <data name="HistoryDescription" xml:space="preserve">
+    <value>Começámos numa sala de lavar roupa e conquistámos o mundo. Em tempos conquistámos a grande mas tambem passámos dificuldades para atingir os nosso objetivos. Fizemos o melhor que conseguimos para atingirmos o melhor. Nos evoluimos e crescemos. A olhar sempre para o futuro mas sabendo sempre de onde viemos. Esta é a nossa história.</value>
+  </data>
+  <data name="OurProducts" xml:space="preserve">
+    <value>Os Nossos Produtos</value>
+  </data>
+  <data name="OurProductsDescription" xml:space="preserve">
+    <value>Conheça a nossa E-Commerce equipa., desde,  E-Commerce Web Services até aos nossos estagiarios.</value>
+  </data>
 </root>

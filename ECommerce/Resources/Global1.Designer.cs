@@ -187,6 +187,24 @@ namespace ECommerce.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to HISTORY.
+        /// </summary>
+        public static string HISTORY {
+            get {
+                return ResourceManager.GetString("HISTORY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We started in a wash room and conquered the world. And in-between, we have scored big and also, sometimes, struggled to reach our goals. We have done our best for the best. We have improved and grown. Looking ahead to the future, always remembering where we came from. This is our story..
+        /// </summary>
+        public static string HistoryDescription {
+            get {
+                return ResourceManager.GetString("HistoryDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kids.
         /// </summary>
         public static string Kids {
@@ -246,6 +264,24 @@ namespace ECommerce.Resources {
         public static string Our_Mission {
             get {
                 return ResourceManager.GetString("Our_Mission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Our Products.
+        /// </summary>
+        public static string OurProducts {
+            get {
+                return ResourceManager.GetString("OurProducts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get to know E-Commerce&apos;s teams, from E-Commerce Web Services to subsidiaries..
+        /// </summary>
+        public static string OurProductsDescription {
+            get {
+                return ResourceManager.GetString("OurProductsDescription", resourceCulture);
             }
         }
         

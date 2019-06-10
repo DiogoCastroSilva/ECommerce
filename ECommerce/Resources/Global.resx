@@ -204,4 +204,16 @@
   <data name="Colour" xml:space="preserve">
     <value>Colour</value>
   </data>
+  <data name="HISTORY" xml:space="preserve">
+    <value>HISTORY</value>
+  </data>
+  <data name="HistoryDescription" xml:space="preserve">
+    <value>We started in a wash room and conquered the world. And in-between, we have scored big and also, sometimes, struggled to reach our goals. We have done our best for the best. We have improved and grown. Looking ahead to the future, always remembering where we came from. This is our story.</value>
+  </data>
+  <data name="OurProducts" xml:space="preserve">
+    <value>Our Products</value>
+  </data>
+  <data name="OurProductsDescription" xml:space="preserve">
+    <value>Get to know E-Commerce's teams, from E-Commerce Web Services to subsidiaries.</value>
+  </data>
 </root>
