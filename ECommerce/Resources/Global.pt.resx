@@ -216,4 +216,7 @@
   <data name="OurProductsDescription" xml:space="preserve">
     <value>Conheça a nossa E-Commerce equipa., desde,  E-Commerce Web Services até aos nossos estagiarios.</value>
   </data>
+  <data name="GoToCheckout" xml:space="preserve">
+    <value>Ir para o checkout</value>
+  </data>
 </root>

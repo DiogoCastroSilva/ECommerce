@@ -216,4 +216,7 @@
   <data name="OurProductsDescription" xml:space="preserve">
     <value>Get to know E-Commerce's teams, from E-Commerce Web Services to subsidiaries.</value>
   </data>
+  <data name="GoToCheckout" xml:space="preserve">
+    <value>Go to checkout</value>
+  </data>
 </root>

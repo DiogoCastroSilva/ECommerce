@@ -147,17 +147,15 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Global.Designer.cs" />
-    <Compile Include="Resources\Global.pt.Designer.cs" />
-    <Compile Include="Resources\Global.pt1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.pt.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\Global1.Designer.cs">
+    <Compile Include="Resources\Global.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Global.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Global.pt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.pt.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -324,11 +322,13 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Global.pt.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Global.pt1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Global.pt.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Global</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Global.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Global1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Global.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
