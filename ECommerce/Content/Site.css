@@ -166,6 +166,11 @@ p {
 }
 /* End Content for showing when mobile: Download App*/
 
+footer {
+    position: page;
+    bottom: 0;
+}
+
 @media (min-width: 768px) {
     .bd-links {
         display: block !important;
