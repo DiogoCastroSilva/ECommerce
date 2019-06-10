@@ -149,6 +149,11 @@
     </Compile>
     <Compile Include="Resources\Global.Designer.cs" />
     <Compile Include="Resources\Global.pt.Designer.cs" />
+    <Compile Include="Resources\Global.pt1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.pt.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Global1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -317,7 +322,10 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Global.pt.resx" />
+    <EmbeddedResource Include="Resources\Global.pt.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Global.pt1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Global.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Global1.Designer.cs</LastGenOutput>

@@ -77,7 +77,40 @@ namespace Resources {
                 return ResourceManager.GetString("AddCart", resourceCulture);
             }
         }
-        
+
+        public static string HISTORY
+        {
+            get
+            {
+                return ResourceManager.GetString("HISTORY", resourceCulture);
+            }
+        }
+
+        public static string HistoryDescription
+        {
+            get
+            {
+                return ResourceManager.GetString("HistoryDescription", resourceCulture);
+            }
+        }
+
+        public static string OurProducts
+        {
+            get
+            {
+                return ResourceManager.GetString("OurProducts", resourceCulture);
+            }
+        }
+
+        public static string OurProductsDescription
+        {
+            get
+            {
+                return ResourceManager.GetString("OurProductsDescription", resourceCulture);
+            }
+        }
+
+
         /// <summary>
         ///   Looks up a localized string similar to E-Commerce.
         /// </summary>
