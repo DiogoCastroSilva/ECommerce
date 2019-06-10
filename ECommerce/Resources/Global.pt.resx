@@ -219,4 +219,52 @@
   <data name="GoToCheckout" xml:space="preserve">
     <value>Ir para o checkout</value>
   </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>Continue a comprar.</value>
+  </data>
+  <data name="EMPTYSHOPPINGBAG" xml:space="preserve">
+    <value>A SUA MALA DE COMPRAS ESTÁ VAZIA</value>
+  </data>
+  <data name="FindAnswer" xml:space="preserve">
+    <value>Encontre a resposta que precise na nossa secção de</value>
+  </data>
+  <data name="here" xml:space="preserve">
+    <value>aqui</value>
+  </data>
+  <data name="NeedHelp" xml:space="preserve">
+    <value>Precisa de ajuda</value>
+  </data>
+  <data name="NeedHelpText" xml:space="preserve">
+    <value>Se quiser falar com algun dos nossos representante do apoio ao cliente pode nos contactar por telemovel ou e-maill. Em alternativa pode encontrar a resposta na nossa página de questões usuais.(FAQs).</value>
+  </data>
+  <data name="notForLong" xml:space="preserve">
+    <value>..não por muito tempo. Descobre os mais de 1000 produtos adicionados semanalmente.</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telemovel</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="section" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="Shipping" xml:space="preserve">
+    <value>Taxa de envio</value>
+  </data>
+  <data name="SHOPPINGBAG" xml:space="preserve">
+    <value>MALA DE COMPRAS</value>
+  </data>
+  <data name="Subtotal" xml:space="preserve">
+    <value>Sub total</value>
+  </data>
+  <data name="SUMMARY" xml:space="preserve">
+    <value>SUMÁRIO</value>
+  </data>
+  <data name="ToSendEmail" xml:space="preserve">
+    <value>para nos enviar um e-mail.</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
 </root>

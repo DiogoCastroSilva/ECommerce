@@ -20,15 +20,15 @@
                             <div class="my-5">
 
 
-                                <h5>YOUR SHOPPING BAG IS EMPTY</h5>
-                                <p class="pt-2">..but not for long! Discover over 1000 new pieces added weekly</p>
+                                <h5>@Resources.Global.EMPTYSHOPPINGBAG</h5>
+                                <p class="pt-2">@Resources.Global.notForLong</p>
 
-                                <p><a href="@Url.Action("Index", "Products")" class="btn"><u>Continue shopping</u></a></p>
+                                <p><a href="@Url.Action("Index", "Products")" class="btn"><u>@Resources.Global.ContinueShopping</u></a></p>
                             </div>
                         }
                         else
                         {
-                            <h5>SHOPPING BAG</h5>
+                            <h5>@Resources.Global.SHOPPINGBAG</h5>
                         }
                     </div>
 
@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="col-6 col-sm-2">
-                            <div class="row">Quantity: @item.NumberOfProducts</div>
+                            <div class="row">@Resources.Global.Quantity: @item.NumberOfProducts</div>
                         </div>
 
                         <dic class="col-12 col-sm-1">
@@ -77,11 +77,11 @@
                 {
                     <div class="row pt-5">
                         <div class="col">
-                            <h5>SUMMARY</h5>
+                            <h5>@Resources.Global.SUMMARY</h5>
                             <div class="row pt-2">
                                 <div class="col">
-                                    <p>Subtotal</p>
-                                    <p>Shipping</p>
+                                    <p>@Resources.Global.Subtotal</p>
+                                    <p>@Resources.Global.Shipping</p>
                                 </div>
                                 <div class="col">
                                     <p>@ViewBag.Subtotal @Resources.Global.coin</p>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <p>Total</p>
+                                    <p>@Resources.Global.Total</p>
                                 </div>
                                 <div class="col">
                                     <p class="m-0 bold">@Resources.Global.coinSimbol @ViewBag.Total@Resources.Global.coin</p>
@@ -117,20 +117,20 @@
     <div class="row mx-5">
 
         <div class="col-12 col-sm-5">
-            <h5>Need help?</h5>
-            <p>If you would like to speak to one of our Customer Service Representatives you can reach us by phone or on email. Alternatively, you might find the answer to your question on our Frequently Asked Questions page.</p>
+            <h5>@Resources.Global.NeedHelp</h5>
+            <p>@Resources.Global.NeedHelpText</p>
         </div>
         <div class="col-6 col-sm">
-            <h5>Phone</h5>
+            <h5>@Resources.Global.Phone</h5>
             <a class="btn m-0 p-0" href="tel:tel:004402037501250#xd_co_f=MmI2ZGM5ODItYWY3Yy00MDkyLThmZTUtMGI2ODkxN2FmYTMy~"><u>+44 (0) 20 3962 2362</u></a>
         </div>
         <div class="col-6 col-sm">
             <h5>Email</h5>
-            <p>Click <a class="btn m-0 p-0 alg-baseline" href="#"><u>here</u></a> to send us an Email.</p>
+            <p>Click <a class="btn m-0 p-0 alg-baseline" href="#"><u>@Resources.Global.here</u></a> @Resources.Global.ToSendEmail</p>
         </div>
         <div class="col-12 col-sm">
             <h5>FAQ</h5>
-            <p>Find the answer you need in our <a class="btn m-0 p-0 alg-baseline" href="#"><u>FAQs</u></a> section.</p>
+            <p>@Resources.Global.FindAnswer<a class="btn m-0 p-0 alg-baseline" href="#"><u>FAQs</u></a>@Resources.Global.section</p>
         </div>
 
     </div>

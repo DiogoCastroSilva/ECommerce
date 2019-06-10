@@ -133,6 +133,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Continue shopping.
+        /// </summary>
+        public static string ContinueShopping {
+            get {
+                return ResourceManager.GetString("ContinueShopping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cookie Preferences.
         /// </summary>
         public static string Cookie_Preferences {
@@ -160,6 +169,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to YOUR SHOPPING BAG IS EMPTY.
+        /// </summary>
+        public static string EMPTYSHOPPINGBAG {
+            get {
+                return ResourceManager.GetString("EMPTYSHOPPINGBAG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to UK GBP £.
         /// </summary>
         public static string EN {
@@ -178,6 +196,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Find the answer you need in our.
+        /// </summary>
+        public static string FindAnswer {
+            get {
+                return ResourceManager.GetString("FindAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Follow us.
         /// </summary>
         public static string FollowUs {
@@ -192,6 +219,15 @@ namespace Resources {
         public static string GoToCheckout {
             get {
                 return ResourceManager.GetString("GoToCheckout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to here.
+        /// </summary>
+        public static string here {
+            get {
+                return ResourceManager.GetString("here", resourceCulture);
             }
         }
         
@@ -250,6 +286,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Need help?.
+        /// </summary>
+        public static string NeedHelp {
+            get {
+                return ResourceManager.GetString("NeedHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you would like to speak to one of our Customer Service Representatives you can reach us by phone or on email. Alternatively, you might find the answer to your question on our Frequently Asked Questions page..
+        /// </summary>
+        public static string NeedHelpText {
+            get {
+                return ResourceManager.GetString("NeedHelpText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ..but not for long! Discover over 1000 new pieces added weekly.
+        /// </summary>
+        public static string notForLong {
+            get {
+                return ResourceManager.GetString("notForLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Orders &amp; Shipping.
         /// </summary>
         public static string Order_Shipping {
@@ -304,6 +367,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Phone.
+        /// </summary>
+        public static string Phone {
+            get {
+                return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Privacy Policy.
         /// </summary>
         public static string Privacy_Policy {
@@ -331,6 +403,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Quantity.
+        /// </summary>
+        public static string Quantity {
+            get {
+                return ResourceManager.GetString("Quantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Returns &amp; Refunds.
         /// </summary>
         public static string Return_Refund {
@@ -340,11 +421,74 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to  section..
+        /// </summary>
+        public static string section {
+            get {
+                return ResourceManager.GetString("section", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping.
+        /// </summary>
+        public static string Shipping {
+            get {
+                return ResourceManager.GetString("Shipping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHOPPING BAG.
+        /// </summary>
+        public static string SHOPPINGBAG {
+            get {
+                return ResourceManager.GetString("SHOPPINGBAG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subtotal.
+        /// </summary>
+        public static string Subtotal {
+            get {
+                return ResourceManager.GetString("Subtotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUMMARY.
+        /// </summary>
+        public static string SUMMARY {
+            get {
+                return ResourceManager.GetString("SUMMARY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Terms &amp; Conditions.
         /// </summary>
         public static string Terms_Conditions {
             get {
                 return ResourceManager.GetString("Terms_Conditions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to to send us an Email..
+        /// </summary>
+        public static string ToSendEmail {
+            get {
+                return ResourceManager.GetString("ToSendEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total.
+        /// </summary>
+        public static string Total {
+            get {
+                return ResourceManager.GetString("Total", resourceCulture);
             }
         }
         

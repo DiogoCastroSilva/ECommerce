@@ -76,16 +76,22 @@
             </div>
             <div class="col-6 col-md-4">
                 <div class="row pb-2">
-                    <h6 class="text-white-50 text-uppercase">@Resources.Global.Country_Region</h6>
-                    <div style="width: 60%;">
-                        @{
-                            var list = new[] { new { value = "en-US", text = Resources.Global.EN }, new { value = "PT", text = Resources.Global.PT } };
-                        }
+                    <div class="col">
+                        <div class="row">
+                            <h6 class="text-white-50 text-uppercase">@Resources.Global.Country_Region</h6>
+                        </div>
+                        <div class="row">
 
-                        @using (Html.BeginForm("SetCulture", "Home"))
-                        {
-                            @Html.DropDownList("culture", new SelectList(list, "value", "text", Session["CultureECommerce"]), new { onchange = "this.form.submit();", @class = "form-control dropdown text-white" })
-                        }
+                            @{
+                                var list = new[] { new { value = "en-US", text = Resources.Global.EN }, new { value = "PT", text = Resources.Global.PT } };
+                            }
+
+                            @using (Html.BeginForm("SetCulture", "Home", FormMethod.Post, new { @class = "w-75" }))
+                            {
+                                @Html.DropDownList("culture", new SelectList(list, "value", "text", Session["CultureECommerce"]), new { onchange = "this.form.submit();", @class = "form-control dropdown text-white w-100" })
+                            }
+
+                        </div>
                     </div>
                 </div>
                 <div class="row pt-0 pt-sm-4">

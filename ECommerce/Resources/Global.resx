@@ -219,4 +219,52 @@
   <data name="GoToCheckout" xml:space="preserve">
     <value>Go to checkout</value>
   </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>Continue shopping</value>
+  </data>
+  <data name="EMPTYSHOPPINGBAG" xml:space="preserve">
+    <value>YOUR SHOPPING BAG IS EMPTY</value>
+  </data>
+  <data name="FindAnswer" xml:space="preserve">
+    <value>Find the answer you need in our</value>
+  </data>
+  <data name="here" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="NeedHelp" xml:space="preserve">
+    <value>Need help?</value>
+  </data>
+  <data name="NeedHelpText" xml:space="preserve">
+    <value>If you would like to speak to one of our Customer Service Representatives you can reach us by phone or on email. Alternatively, you might find the answer to your question on our Frequently Asked Questions page.</value>
+  </data>
+  <data name="notForLong" xml:space="preserve">
+    <value>..but not for long! Discover over 1000 new pieces added weekly</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="section" xml:space="preserve">
+    <value> section.</value>
+  </data>
+  <data name="Shipping" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+  <data name="SHOPPINGBAG" xml:space="preserve">
+    <value>SHOPPING BAG</value>
+  </data>
+  <data name="Subtotal" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="SUMMARY" xml:space="preserve">
+    <value>SUMMARY</value>
+  </data>
+  <data name="ToSendEmail" xml:space="preserve">
+    <value>to send us an Email.</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
 </root>
