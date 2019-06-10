@@ -7,7 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         @Html.ActionLink(Resources.Global.APP_NAME, "Index", "Home", null, new { @class = "navbar-brand" })
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +65,7 @@
 
     @RenderBody()
 
-    <footer class="container-fluid p-5 text-white" style="background-color: black;">
+    <footer class="container-fluid mt-auto p-5 text-white" style="background-color: black;">
         <div class="row px-5">
             <div class="col-6 col-md-4 pl-sm-5">
                 <h6 class="text-white-50 text-uppercase">@Resources.Global.Our_App</h6>
