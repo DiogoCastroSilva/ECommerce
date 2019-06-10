@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar order-sm-first order-last">
+            @Html.Partial("_FilterPartial")
+        </div>
+        <div class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 bd-content order-sm-last order-first">
+            @Html.Partial("_ProductsContainer")
+        </div>
+    </div>
+</div>

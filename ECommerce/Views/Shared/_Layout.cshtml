@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - E-Commerce</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        @Html.ActionLink(Resources.Global.APP_NAME, "Index", "Home", null, new { @class = "navbar-brand" })
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto pl-5">
+                <li class="nav-item">
+                    @Html.ActionLink(Resources.Global.Products, "Index", "Products", new { id = "", type = "" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink(Resources.Global.Man, "Index", "Products", new { id = "Men", type = "gender" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink(Resources.Global.Woman, "Index", "Products", new { id = "Woman", type = "gender" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink(Resources.Global.Kids, "Index", "Products", new { id = "Kids", type = "gender" }, new { @class = "nav-link" })
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-md-auto">
+                    <a class="nav-link"><i class="fas fa-user"></i></a>
+                </li>
+                <li class="nav-item mr-md-auto">
+                    <a class="nav-link"><i class="fas fa-star"></i></a>
+                </li>
+                <li class="nav-item mr-md-auto">
+                    <a class="nav-link" href="@Url.Action("Bag", "Products", null)">
+                        <i class="fas fa-shopping-bag"></i>
+                        @if (@Session["CartLenght"] != null)
+                        {
+                            @Session["CartLenght"].ToString()
+                        }
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="closeBanner" class="container-fluid bg-light border border-secondary AppBanner-active p-3">
+        <div class="row">
+            <div class="col-9 col-sm-10  align-self-center text-center">
+                <button type="button" class="float-left close pr-4" aria-label="Close" onclick="closeClick()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="float-left">Get the APP</h5>
+            </div>
+            <div class="col-3 col-sm-2">
+                <button type="button" class="btn btn-outline-secondary">Primary</button>
+            </div>
+        </div>
+    </div>
+
+
+    @RenderBody()
+
+    <footer class="container-fluid p-5 text-white" style="background-color: black;">
+        <div class="row px-5">
+            <div class="col-6 col-md-4 pl-sm-5">
+                <h6 class="text-white-50 text-uppercase">@Resources.Global.Our_App</h6>
+                <div class="pt-2">
+                    <a class="text-light" href="#"><h5 class="text-responsive"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;ECommerce App</h5></a>
+                </div>
+
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="row pb-2">
+                    <h6 class="text-white-50 text-uppercase">@Resources.Global.Country_Region</h6>
+                    <div style="width: 60%;">
+                        @{
+                            var list = new[] { new { value = "en-US", text = Resources.Global.EN }, new { value = "PT", text = Resources.Global.PT } };
+                        }
+
+                        @using (Html.BeginForm("SetCulture", "Home"))
+                        {
+                            @Html.DropDownList("culture", new SelectList(list, "value", "text", Session["CultureECommerce"]), new { onchange = "this.form.submit();", @class = "form-control dropdown text-white" })
+                        }
+                    </div>
+                </div>
+                <div class="row pt-0 pt-sm-4">
+                    <div class="col">
+                        <div class="row">
+                            <h6 class="text-white-50 text-uppercase">@Resources.Global.FollowUs</h6>
+                        </div>
+                        <div class="row align-items-start pt-2">
+                            <div class="col-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="col-1">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="col-1">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="col-1">
+                                <i class="fab fa-snapchat-ghost"></i>
+                            </div>
+                            <div class="col-1">
+                                <i class="fab fa-pinterest-p"></i>
+                            </div>
+                            <div class="col-1">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3 pt-4 pt-md-0">
+                <div class="row">
+                    <div class="col">
+                        <h6 class="text-white-50 text-uppercase">@Resources.Global.CustomerService</h6>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-light" href="@Url.Action("Index", "CustomerSupport", null)">@Resources.Global.Contact_Us</a></li>
+                            <li><a class="text-light" href="@Url.Action("Index", "CustomerSupport", new { viewToRender = "_OrdersAndShipping" })">@Resources.Global.Order_Shipping</a></li>
+                            <li><a class="text-light" href="@Url.Action("Index", "CustomerSupport", new { viewToRender = "_PaymentAndPricing" })">@Resources.Global.Pay_Price</a></li>
+                            <li><a class="text-light" href="@Url.Action("Index", "CustomerSupport", new { viewToRender = "_ReturnsAndRefunds" })">@Resources.Global.Return_Refund</a></li>
+                            <li><a class="text-light" href="@Url.Action("Index", "CustomerSupport", new { viewToRender = "_FAQ" })">@Resources.Global.FAQs</a></li>
+                            <li><a class="text-light" href="@Url.Action("Index", "CustomerSupport", new { viewToRender = "_PrivacyAndPolicy" })">@Resources.Global.Privacy_Policy</a></li>
+                            <li><a class="text-light">@Resources.Global.Cookie_Preferences</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-1 pt-4 pt-md-0">
+                <div class="row">
+                    <div class="col">
+                        <h6 class="text-white-50 text-uppercase">@Resources.Global.About</h6>
+                        <ul class="list-unstyled text-small">
+                            <li>@Html.ActionLink(Resources.Global.About, "About", "Home", null, new { @class = "text-light" })</li>
+                            <li><a class="text-light">@Resources.Global.Locations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script>
+        function closeClick() {
+            var closeButton = document.getElementById("closeBanner");
+            closeButton.classList.add("hide-button");
+        }
+    </script>
+</body>
+</html>

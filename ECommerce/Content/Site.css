@@ -1,0 +1,199 @@
+﻿
+body {
+    font-family: Polaris-Book,Helvetica,Arial,sans-serif;
+}
+
+p {
+    line-height: 2.21rem;
+}
+
+#Exemplo select {
+    background-color: black !important;
+    border: none !important;
+}
+
+#Exemplo option {
+    background-color: white !important;
+    color: black;
+}
+
+.dropdown {
+    background-color: black !important;
+    border: none !important;
+}
+
+.bd-sidebar {
+    -ms-flex-order: 0;
+    order: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.bd-links {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.bold {
+    font-family: Polaris-Bold,sans-serif;
+}
+
+.alg-baseline {
+    vertical-align: baseline;
+}
+
+
+/* Content for showing when mobile: Download App*/
+.hide-button {
+    display: none !important;
+}
+
+.AppBanner-active {
+    display: none;
+}
+
+.AppBanner-active {
+    display: none;
+}
+
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.brand-title {
+    margin: 0;
+    display: inline;
+    font-size: medium;
+    line-height: normal;
+    font-family: Polaris-Condensed-Bold,Polaris-Bold,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .19rem;
+    font-weight: 600;
+}
+
+.product-title {
+    font-family: Polaris-Book,Helvetica,Arial,sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 1.5rem;
+    line-height: 1.46;
+}
+
+.product-price--info {
+    padding: 1.2rem 0;
+    font-size: 13px;
+}
+
+.product-price {
+    margin-right: .6rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: Polaris-Book,Helvetica,Arial,sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.46;
+}
+
+.dutty-information {
+    display: inline-block;
+    color: #b6b6b6;
+    white-space: nowrap;
+    font-family: Polaris-Book,Helvetica,Arial,sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.product-info {
+    text-transform: none;
+    letter-spacing: normal;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.product-description {
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.46;
+}
+
+.product-composition {
+    line-height: 0.5rem;
+}
+
+.designer-backstory {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 1.5rem;
+    line-height: 1.46;
+}
+
+.color-medium-grey {
+    color: #aaa !important;
+}
+
+.ln-h-small {
+    line-height: .7rem;
+}
+
+.f-small {
+    font-size: small;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .AppBanner-active {
+        display: block;
+    }
+
+    .text-responsive {
+        font-size: 1rem;
+    }
+}
+/* End Content for showing when mobile: Download App*/
+
+@media (min-width: 768px) {
+    .bd-links {
+        display: block !important;
+        height: 100%;
+        overflow-y: auto;
+        width: 100%
+    }
+
+    .bd-sidebar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 4rem;
+        z-index: 1000;
+        height: 100%;
+        border-right: 1px solid rgba(0,0,0,.1);
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .bd-sidebar {
+        -ms-flex: 0 1 320px;
+        flex: 0 1 320px;
+    }
+
+    .display-3 {
+        font-size: 17vh;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}

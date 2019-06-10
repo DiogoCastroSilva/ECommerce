@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ECommerce.Models.Product>
+
+<nav>
+    <div class="row align-items-center mb-5">
+        @foreach (var item in Model)
+        {
+            <div class="col col-sm-4 d-flex justify-content-center">
+                <a href="@Url.Action("ProductDetails", "Products", new { id = @item.ID})" class="card border-0" style="width: 10rem; color: black">
+                    <img src="@item.Image.ToString()" class="card-img-top" alt="@item.Name">
+                    <div class="card-body">
+                        <div class="row justify-content-center" style="height: 2.5rem"><h6 class="card-title">@item.Brand</h6></div>
+                        <div class="row justify-content-center" style="height: 4rem"><p class="card-text font-weight-light">@item.Name</p></div>
+                        <div class="row justify-content-center" style="height: 0.5rem"><p class="card-text lead">@item.Price&nbsp;@Resources.Global.coin</p></div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</nav>
+

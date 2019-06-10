@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid m-5">
+
+    <div class="row m-5">
+        <div class="col-2">
+            <nav class="d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            @Html.ActionLink("Contact us", "Index", "CustomerSupport", new { viewToRender = "_ContactUs", @class = "nav-link" })
+                            @Html.ActionLink("How to shop", "Index", "CustomerSupport", new { viewToRender = "_HowToShop" }, new { @class = "nav-link" })
+                            @Html.ActionLink("Orders & Shipping", "Index", "CustomerSupport", new { viewToRender = "_OrdersAndShipping" }, new { @class = "nav-link" })
+                            @Html.ActionLink("Payment & Pricing", "Index", "CustomerSupport", new { viewToRender = "_PaymentAndPricing" }, new { @class = "nav-link" })
+                            @Html.ActionLink("Returns & Refunds", "Index", "CustomerSupport", new { viewToRender = "_ReturnsAndRefunds" }, new { @class = "nav-link" })
+                            @Html.ActionLink("FAQ", "Index", "CustomerSupport", new { viewToRender = "_FAQ" }, new { @class = "nav-link" })
+                            @Html.ActionLink("Terms & Conditions", "Index", "CustomerSupport", new { viewToRender = "_TermsAndConditions" }, new { @class = "nav-link" })
+                            @Html.ActionLink("Privacy & Policy", "Index", "CustomerSupport", new { viewToRender = "_PrivacyAndPolicy" }, new { @class = "nav-link" })
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-10">
+            @{
+                string viewToRender = ViewBag.ViewToRender;
+                Html.RenderPartial(viewToRender);
+            }
+        </div>
+    </div>
+
+</div>
+

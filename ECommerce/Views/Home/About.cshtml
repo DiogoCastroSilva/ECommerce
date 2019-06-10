@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div class="container text-center p-5">
+    <h1>@Resources.Global.Our_Mission</h1>
+    <h3 class="display-5 pt-3">@Resources.Global.Mission_Message</h3>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4 p-0 m-0">
+            <a href="@Url.Action("Index", "Products", new { gender = "Woman" })">
+                <div class="card">
+                    <img src="~/Content/Images/Francisco.png" class="card-img img-responsive" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 p-0 m-0">
+            <a href="@Url.Action("Index", "Products", new { gender = "Men" })">
+                <div class="card">
+                    <img src="~/Content/Images/Diogo.jpg" class="card-img img-responsive" alt="...">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 p-0 m-0">
+            <a href="@Url.Action("Index", "Products", new { gender = "Kids" })">
+                <div class="card">
+                    <img src="~/Content/Images/Ricardo.jpg" class="card-img img-responsive" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center p-5 mt-5">
+    <h1>HISTORY</h1>
+    <h3 class="display-5 pt-3">We started in a wash room and conquered the world. And in-between, we have scored big and also, sometimes, struggled to reach our goals. We have done our best for the best. We have improved and grown. Looking ahead to the future, always remembering where we came from. This is our story.</h3>
+</div>
+<div class="container justify-content-center py-3">
+    <div class="row">
+        <div class="col-6 col-md-4 p-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="~/Content/Images/history-small.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title display-6 text-uppercase">Our Products</h5>
+                    <p class="card-text">Get to know E-Commerce's teams, from E-Commerce Web Services to subsidiaries.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="~/Content/Images/residents-new-season-sneakers.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title display-6 text-uppercase">New-season sneakers</h5>
+                    <p class="card-text">The Brooklyn-based photographer is known for capturing the real-life style of people on the street.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="~/Content/Images/environmental.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title display-6 text-uppercase">Sustainability and Innovation</h5>
+                    <p class="card-text">We are a tech-based company that can also drive environmental and/or social improvement in fashion and retail.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="~/Content/Images/demodays.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title display-6 text-uppercase">Dream Assembly Demo Days</h5>
+                    <p class="card-text">We will celebrate the end of its first 12-week Dream Assembly accelerator programme with 2 Demo Days.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="~/Content/Images/tel-aviv.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title display-6 text-uppercase">Next Stop Tel Aviv</h5>
+                    <p class="card-text">From the 13th to 15th of May 2018, Dream Assembly will be heading to Tel Aviv to meet with startups in Israel.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="~/Content/Images/london.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title display-6 text-uppercase">Dream Assembly celebrates its launch in London</h5>
+                    <p class="card-text">Dream Assembly will gather together the startup community in London with a celebration breakfast.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

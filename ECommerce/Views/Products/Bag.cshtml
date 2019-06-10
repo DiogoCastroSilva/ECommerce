@@ -1,0 +1,134 @@
+﻿@model IEnumerable<ECommerce.Models.Cart>
+
+@{
+    ViewBag.Title = "Bag";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid p-5">
+    <div class="px-5">
+        <div class="row px-5">
+            <div class="col-12 col-sm-10 pt-3">
+                <div class="row pb-2">
+                    <div class="col">
+
+                    </div>
+                    <div class="col-12 col-sm">
+
+                        @if (Model.Count() <= 0)
+                        {
+                            <div class="my-5">
+
+
+                                <h5>YOUR SHOPPING BAG IS EMPTY</h5>
+                                <p class="pt-2">..but not for long! Discover over 1000 new pieces added weekly</p>
+
+                                <p><a href="" class="btn"><u>Continue shopping</u></a></p>
+                            </div>
+                        }
+                        else
+                        {
+                            <h5>SHOPPING BAG</h5>
+                        }
+                    </div>
+
+                </div>
+
+                @foreach (var item in Model)
+                {
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-2">
+                            <div class="row">
+                                <div class="col-12 col-sm-8">
+                                    <img src="@item.CartProducts.Image" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="@Url.Action("ProductDetails", "Products", new { id = @item.CartProducts.ID})" style="color: black">
+                                <div class="row">@item.CartProducts.Brand</div>
+                                <div class="row">@item.CartProducts.Name</div>
+                                <div class="row">@item.CartProducts.ID</div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-3">
+                            <div class="row">@item.CartProducts.Price@Resources.Global.coin</div>
+                            <div class="row f-small color-medium-grey">(VAT included)</div>
+                        </div>
+
+                        <div class="col-6 col-sm-2">
+                            <div class="row">Quantity: @item.NumberOfProducts</div>
+                        </div>
+
+                        <dic class="col-12 col-sm-1">
+                            <div class="row justify-content-center">
+                                <a class="btn" href="@Url.Action("RemoveFromBag", "Products", new { @item.CartProducts.ID})">x</a>
+                            </div>
+                        </dic>
+
+                    </div>
+
+                }
+            </div>
+            <div class="col-12 col-sm-2 pt-5">
+
+                @if (Model.Count() > 0)
+                {
+                    <div class="row pt-5">
+                        <div class="col">
+                            <h5>SUMMARY</h5>
+                            <div class="row pt-2">
+                                <div class="col">
+                                    <p>Subtotal</p>
+                                    <p>Shipping</p>
+                                </div>
+                                <div class="col">
+                                    <p>@ViewBag.Subtotal @Resources.Global.coin</p>
+                                    <p>0.00 @Resources.Global.coin</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Total</p>
+                                </div>
+                                <div class="col">
+                                    <p class="m-0 bold">@Resources.Global.coinSimbol @ViewBag.Total@Resources.Global.coin</p>
+                                    <p class="m-0 ln-h-small f-small color-medium-grey">Vat included</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-light p-5">
+
+
+    <div class="row mx-5">
+
+        <div class="col-12 col-sm-5">
+            <h5>Need help?</h5>
+            <p>If you would like to speak to one of our Customer Service Representatives you can reach us by phone or on email. Alternatively, you might find the answer to your question on our Frequently Asked Questions page.</p>
+        </div>
+        <div class="col-6 col-sm">
+            <h5>Phone</h5>
+            <a class="btn m-0 p-0" href="tel:tel:004402037501250#xd_co_f=MmI2ZGM5ODItYWY3Yy00MDkyLThmZTUtMGI2ODkxN2FmYTMy~"><u>+44 (0) 20 3962 2362</u></a>
+        </div>
+        <div class="col-6 col-sm">
+            <h5>Email</h5>
+            <p>Click <a class="btn m-0 p-0 alg-baseline" href="#"><u>here</u></a> to send us an Email.</p>
+        </div>
+        <div class="col-12 col-sm">
+            <h5>FAQ</h5>
+            <p>Find the answer you need in our <a class="btn m-0 p-0 alg-baseline" href="#"><u>FAQs</u></a> section.</p>
+        </div>
+
+    </div>
+</div>

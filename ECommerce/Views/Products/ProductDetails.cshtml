@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ECommerce.Models.Product>
+
+@{
+    ViewBag.Title = "ProductDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid p-4">
+    @foreach (var item in Model)
+    {
+
+        <div class="row align-items-center mx-4">
+            <div class="col-12 col-md-9 pr-0 pl-0 pl-sm-5">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <img src="@item.ImageDetails.ToString()" class="card-img-top" alt="@item.Name">
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="@item.ImageDetails2.ToString()" class="card-img-top" alt="@item.Name">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 pl-0">
+                <div class="row float-md-left">
+                    <div class="col text-center">
+                        <h4 class="brand-title">@item.Brand</h4>
+                        <h5>@item.Name</h5>
+                        <div class="product-price--info">
+                            <span>
+                                <strong class="product-price">@item.Price&nbsp;@Resources.Global.coin</strong>
+                                <small class="dutty-information">(VAT included)</small>
+                            </span>
+                        </div>
+                        <a href="@Url.Action("AddProduct", "Products", new { @item.ID })" class="btn btn-dark" >@Resources.Global.AddCart<span class="pl-3"></span><i class="fas fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid p-4">
+            <div class="row p-4 p-md-0">
+                <div class="col-12 col-md-9 pr-0 pl-0 pl-sm-5">
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <h4 class="brand-title">@item.Brand</h4>
+                            <p class="product-info">@item.Name</p>
+                            <p class="product-description">@item.Description</p>
+
+                            <p class="pt-2 product-composition">Composition</p>
+                            <p class="product-composition">Outer: @item.Composition.Outer @item.Composition.OuterPercentage</p>
+                            <p class="product-composition">Sole: @item.Composition.Sole @item.Composition.SolePercentage</p>
+                            <p class="product-composition">Lining: @item.Composition.Lining @item.Composition.LiningPercentage</p>
+
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            @if (!string.IsNullOrEmpty(@item.BrandBackstory))
+                            {
+                                <h3 class="designer-backstory">Designer Backstory</h3>
+                                <p class="product-description">@item.BrandBackstory</p>
+                            }
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-3">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    }
+</div>

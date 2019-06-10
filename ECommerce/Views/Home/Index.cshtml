@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container-fluid d-none d-sm-block">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center p-0">
+            <img class="img-responsive" alt="Tienda" src="~/Content/Images/welcome.jpg" style="width: 100%" />
+            <div class="carousel-caption" style="top: 27%">
+                <h1 class="display-3">@Resources.Global.Welcome</h1>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center p-0 m-0">
+            <a href="@Url.Action("Index", "Products", new { gender = "Men" })">
+                <div class="card text-white">
+                    <img src="https://c.static-nike.com/a/images/f_auto/w_1536,c_limit/mwajhfiaos1ttp4c53d1/nikecom-homepage-emea-3.jpg" class="card-img img-responsive" alt="...">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">@Resources.Global.Man</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md-4 text-center p-0 m-0">
+            <a href="@Url.Action("Index", "Products", new { gender = "Woman" })">
+                <div class="card text-white">
+                    <img src="https://c.static-nike.com/a/images/f_auto/w_1536,c_limit/q8ng7zkgd2q8ge3pqhvh/nikecom-homepage-emea-3.jpg" class="card-img img-responsive" alt="">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">@Resources.Global.Woman</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 text-center p-0 m-0">
+            <a href="@Url.Action("Index", "Products", new { gender = "Kids" })">
+                <div class="card text-white">
+                    <img src="https://c.static-nike.com/a/images/f_auto/w_1536,c_limit/hh1y5apwesjji2qy0cca/nikecom-homepage-emea-3.jpg" class="card-img img-responsive" alt="">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">@Resources.Global.Kids</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
