@@ -175,6 +175,7 @@
     <Content Include="Content\fontawesome-all.min.css" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\Images\Diogo.jpg" />
     <Content Include="Content\Images\Francisco.png" />
     <Content Include="Content\Images\Ricardo.jpg" />
